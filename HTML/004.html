@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet 요약</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <h2>인기있는 유무료 에디터</h2>
+    <p>1. Visual Studio Code(MS)</p>
+    <p>2. Sublime</p>
+    <p>3. Atom(GitHub)</p>
+    <hr>
+    <p>파이참(Jet Brains)</p>
+    <p>Colab(Google), jupyter notebook - 데이터 사이언스 특화</p>
+    <p>웹스톰(Jet Brains)</p>
+    <p>이클립스, 인텔리제이, VSC 커스텀 - JAVA</p>
+    <hr>
+    <p>구름IDE</p>
+    <p>replit(https://replit.com/languages/c)</p>
+    <p>codesandbox(https://codesandbox.io/)</p>
+
+    <h1></h1> <!-- h1 -->
+    <h1>hello</h1> <!--  h1{hello} -->
+    <h1>hello world</h1> <!-- h1{hello world} -->
+    <p>hello</p> <!-- p{hello}*10 -->
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p><strong></strong></p> <!-- p>strong -->
+    <h1>one</h1> <!-- h1+h2+p -->
+    <h2>two</h2>
+    <p>three</p>
+    <h1 id="one"></h1> <!-- h1#one  id설정-->
+    <h1 id="one"></h1> <!-- h1.one class설정 -->
+    <div class="one"></div> <!-- .one만 치면 div 안에 들어감 -->
+    <div id="one"></div><!--  #one도 div로 들어감 -->
+    <h1 id="one" class="two three four"></h1> <!-- h1#one.two.three.four -->
+    <h1></h1> <!--  h$*6 h1부터6까지 -->
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    <h1>hello</h1> <!-- h${hello}*6 h1부터6까지 내용을 넣을때 $표시는 증가다!!! -->
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+    <div class="containter-1"></div>  <!-- div.containter-$*6 -->
+    <div class="containter-2"></div>
+    <div class="containter-3"></div>
+    <div class="containter-4"></div>
+    <div class="containter-5"></div>
+    <div class="containter-6"></div>
+    <div class="container-1 row1"></div> <!-- div.container-$.row$*6 -->
+    <div class="container-2 row2"></div>
+    <div class="container-3 row3"></div>
+    <div class="container-4 row4"></div>
+    <div class="container-5 row5"></div>
+    <div class="container-6 row6"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsa labore autem et expedita, quod, blanditiis nobis laudantium temporibus eaque hic quo dicta? Explicabo et pariatur, blanditiis quisquam minus commodi. <!-- lorem 한글은 한글입숨 검색!-->
+    Lorem ipsum dolor sit amet. <!-- lorem5 뒤에 숫자는 단어의 개수, *5는 문단의 개수-->
+    <img src="" alt=""> <!-- img 옵션 많으니 확인해볼것! -->
+    <p a="value1" b="value2" c="1" d="value3"></p> <!-- p[a="value1" b="value2" c=1 d="value3"] -->
+    <a href="http://www.naver.com"></a> <!-- a[href="http://www.naver.com"] 다량생산만 권장!! -->
+    
+    table>(tr>td{hello}*10)*5
+    <!-- table>tr*5>tr*10 도 비슷한결과 괄호때문에 위가 편함! -->
+    table>(thead>tr>th{제목}*5)+(tbody>tr*10>td{내용}*5)+(tfoot>tr>td*5)
+
+
+
+<!-- 전체정리 -->
+    h1
+    h1{hello}
+    h1{hello world}
+    p{hello}*10
+    p>strong
+    h1+h2+p
+    h1#one
+    h1.one
+    #one
+    .one
+    h1#one.two.three.four
+    h$*6
+    h${hello}*6
+    div.container-$.row-$*6
+    lorem
+    lorem5
+    lorem*5
+    한글입숨
+    img
+    img:z
+    img
+    p[a="value1" b="value2" c=1 d=value3]
+    a[href="https://www.naver.com"]
+    table>(tr>td{hello}*10)*5
+    table>tr*5>td*10
+    table>(thead>tr>th{제목}*5)+(tbody>tr*10>td{내용}*5)+tfoot>tr>td*5
+    (ctrl + space) 키 자동완성
+</body>
+</html>
